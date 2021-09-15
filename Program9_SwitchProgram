@@ -1,0 +1,146 @@
+//
+//  main.cpp
+//  Program9_SwitchProgram
+//
+//  Created by Cromwell Jonas De Guzman on 9/14/21.
+//
+
+// This program allows the user to choose an action in a turn-based RPG game.
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    // define variables
+    int action, answer;
+    char weapon, spell, item;
+    
+    // starting dialogue
+    cout << "You've encountered an evil fire-breathing dragon!\n"
+    << "What would you like to do?\n"
+    << endl
+    << "1. Attack\n"
+    << "2. Cast a Spell\n"
+    << "3. Use an Item\n"
+    << "4. Pass\n"
+    << "5. Flee\n"
+    << endl;
+    
+    // input action
+    cin >> action;
+    
+    switch(action) {
+        case 1: // attack selected
+            cout << "\nWhich weapon do you want to attack with?\n"
+            << endl
+            << "a. sword\n"
+            << "b. bow and arrow\n"
+            << endl;
+            
+            // input weapon
+            cin >> weapon;
+            
+            if (weapon == 'a' || weapon == 'A') // sword selected
+                cout << "\nYou attacked with your sword!\n"
+                << "You dealt 10 slashing damage to the enemy.\n"
+                << endl;
+            else if (weapon == 'b' || weapon == 'B') // bow and arrow selected
+                cout << "\nYou shot an arrow with your bow!\n"
+                << "You dealt 8 piercing damage to the enemy.\n"
+                << endl;
+            else // none of the above selected
+                cout << "\nThat's not one of the choices!\n"
+                << "You passed your turn in your own confusion.\n"
+                << endl;
+            
+            break;
+            
+        case 2: // cast a spell selected
+            cout << "\nWhich spell do you want to cast?\n"
+            << endl
+            << "a. fireball\n"
+            << "b. heal\n"
+            << endl;
+            
+            // input spell
+            cin >> spell;
+            
+            if (spell == 'a' || spell == 'A') // fireball selected
+                cout << "\nYou cast fireball!\n"
+                << "You dealt 30 fire damage to the enemy.\n"
+                << endl;
+            else if (spell == 'b' || spell == 'B') // heal selected
+                cout << "\nYou cast heal!\n"
+                << "You restored 50 hit points to yourself.\n"
+                << endl;
+            else // none of the above selected
+                cout << "\nThat's not one of the choices!\n"
+                << "You passed your turn in your own confusion.\n"
+                << endl;
+            
+            break;
+            
+        case 3: // use an item selected
+            cout << "\nWhich item do you want to use?\n"
+            << endl
+            << "a. health potion\n"
+            << "b. shield\n"
+            << endl;
+            
+            // input item
+            cin >> item;
+            
+            if (item == 'a' || item == 'A') // health potion selected
+                cout << "\nYou used a health potion!\n"
+                << "You restored 10 hit points to yourself.\n"
+                << endl;
+            else if (item == 'b' || item == 'B') // shield selected
+                cout << "\nYou raised your shield!\n"
+                << "Now, all incoming damage will be blocked until the start of your next turn.\n"
+                << endl;
+            else // none of the above selected
+                cout << "\nThat's not one of the choices!\n"
+                << "You passed your turn in your own confusion.\n"
+                << endl;
+            
+            break;
+            
+        case 4: // pass selected
+            cout << "\nYou passed your turn.\n"
+            << endl;
+            
+            break;
+            
+        case 5: // flee selected
+            cout << "\nPerform a dexterity check to run away: 1 + 1 = ?\n"
+            << endl;
+            
+            // input answer
+            cin >> answer;
+            
+            if (answer == 2) // right answer
+                cout << "\nYou escaped successfully! See you later, alligator!\n"
+                << endl;
+            else if (answer != 2) // wrong answer
+                cout << "\nYour escape attempt was unsuccessful! Better luck next time!\n"
+                << endl;
+            
+            break;
+            
+        default: // none of the above selected
+            cout << "\nThat's not one of the choices!\n"
+            << "You passed your turn in your own confusion.\n"
+            << endl;
+            
+            break;
+            
+    }
+    
+    system("PAUSE");
+    
+    return 0;
+    
+}
