@@ -1,0 +1,285 @@
+//
+//  main.cpp
+//  Program9_SwitchProgram1
+//
+//  Created by Cromwell Jonas De Guzman on 9/16/21.
+//
+
+// This program allows a person to choose a desired soda from a soda machine.
+
+// pre-processor directives
+#include <cmath>
+#include <cstdlib>
+#include <iomanip>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    // define variables
+    int brand, g = 130;
+    char diet, flavor;
+    double cost = 1.00;
+    
+    // prompt for brand
+    cout << "Which brand of soda would you like?\n" << endl
+    << "1. Coke\n"
+    << "2. Pepsi\n"
+    << "3. Sprite\n"
+    << "4. Dr. Pepper\n"
+    << "5. Crush\n" << endl;
+    
+    // input brand
+    cin >> brand;
+    
+    switch (brand) {
+        case 1: // coke selected
+            
+            // prompt for diet
+            cout << "\nWould you like (a) Diet Coke or (b) Regular Coke?\n" << endl;
+            
+            // input diet
+            cin >> diet;
+            
+            if (diet == 'a' || diet == 'A') { // diet selected
+                
+                // adjust g and cost
+                g = g / 2;
+                cost = cost * 0.50;
+                
+                // output order
+                cout << "\nYou ordered a Diet Coke (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                
+            } else if (diet == 'b' || diet == 'B') { // regular selected
+                
+                // prompt for flavor
+                cout << "\nWould you like (a) Cherry Coke or (b) Vanilla Coke?\n" << endl;
+                
+                // input flavor
+                cin >> flavor;
+                
+                // adjust g and cost
+                g = g + 100;
+                cost = cost + 0.50;
+                
+                if (flavor == 'a' || flavor == 'A') { // cherry selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Cherry Coke (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else if (flavor == 'b' || flavor == 'B') { // vanilla selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Vanilla Coke (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else // error trap
+                    cout << "\n That is not a valid option." << endl;
+            
+            } else // error trap
+                cout << "\n That is not a valid option." << endl;
+                
+            break;
+            
+        case 2: // pepsi selected
+            
+            // prompt for diet
+            cout << "\nWould you like (a) Diet Pepsi or (b) Regular Pepsi?\n" << endl;
+            
+            // input diet
+            cin >> diet;
+            
+            if (diet == 'a' || diet == 'A') { // diet selected
+                
+                // adjust g and cost
+                g = g / 2;
+                cost = cost * 0.50;
+                
+                // output order
+                cout << "\nYou ordered a Diet Pepsi (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                
+            } else if (diet == 'b' || diet == 'B') { // regular selected
+                
+                // prompt for flavor
+                cout << "\nWould you like (a) Cherry Pepsi or (b) Vanilla Pepsi?\n" << endl;
+                
+                // input flavor
+                cin >> flavor;
+                
+                // adjust g and cost
+                g = g + 100;
+                cost = cost + 0.50;
+                
+                if (flavor == 'a' || flavor == 'A') { // cherry selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Cherry Pepsi (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else if (flavor == 'b' || flavor == 'B') { // vanilla selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Vanilla Pepsi (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else // error trap
+                    cout << "\n That is not a valid option." << endl;
+            
+            } else // error trap
+                cout << "\n That is not a valid option." << endl;
+            
+            break;
+            
+        case 3: // sprite selected
+            
+            // prompt for diet
+            cout << "\nWould you like (a) Diet Sprite or (b) Regular Sprite?\n" << endl;
+            
+            // input diet
+            cin >> diet;
+            
+            if (diet == 'a' || diet == 'A') { // diet selected
+                
+                // adjust g and cost
+                g = g / 2;
+                cost = cost * 0.50;
+                
+                // output order
+                cout << "\nYou ordered a Diet Sprite (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                
+            } else if (diet == 'b' || diet == 'B') { // regular selected
+                
+                // prompt for flavor
+                cout << "\nWould you like (a) Orange Sprite or (b) Grape Sprite?\n" << endl;
+                
+                // input flavor
+                cin >> flavor;
+                
+                // adjust g and cost
+                g = g + 100;
+                cost = cost + 0.50;
+                
+                if (flavor == 'a' || flavor == 'A') { // cherry selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Orange Sprite (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else if (flavor == 'b' || flavor == 'B') { // vanilla selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Grape Sprite (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else // error trap
+                    cout << "\n That is not a valid option." << endl;
+            
+            } else // error trap
+                cout << "\n That is not a valid option." << endl;
+            
+            break;
+            
+        case 4: // dr. pepper selected
+            
+            // prompt for diet
+            cout << "\nWould you like (a) Diet Dr. Pepper or (b) Regular Dr. Pepper?\n" << endl;
+            
+            // input diet
+            cin >> diet;
+            
+            if (diet == 'a' || diet == 'A') { // diet selected
+                
+                // adjust g and cost
+                g = g / 2;
+                cost = cost * 0.50;
+                
+                // output order
+                cout << "\nYou ordered a Diet Dr. Pepper (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                
+            } else if (diet == 'b' || diet == 'B') { // regular selected
+                
+                // prompt for flavor
+                cout << "\nWould you like (a) Cherry Dr. Pepper or (b) Vanilla Dr. Pepper?\n" << endl;
+                
+                // input flavor
+                cin >> flavor;
+                
+                // adjust g and cost
+                g = g + 100;
+                cost = cost + 0.50;
+                
+                if (flavor == 'a' || flavor == 'A') { // cherry selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Cherry Dr. Pepper (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else if (flavor == 'b' || flavor == 'B') { // vanilla selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Vanilla Dr. Pepper (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else // error trap
+                    cout << "\n That is not a valid option." << endl;
+            
+            } else // error trap
+                cout << "\n That is not a valid option." << endl;
+            
+            break;
+            
+        case 5: // crush selected
+            
+            // prompt for diet
+            cout << "\nWould you like (a) Diet Crush or (b) Regular Crush?\n" << endl;
+            
+            // input diet
+            cin >> diet;
+            
+            if (diet == 'a' || diet == 'A') { // diet selected
+                
+                // adjust g and cost
+                g = g / 2;
+                cost = cost * 0.50;
+                
+                // output order
+                cout << "\nYou ordered a Diet Crush (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                
+            } else if (diet == 'b' || diet == 'B') { // regular selected
+                
+                // prompt for flavor
+                cout << "\nWould you like (a) Orange Crush or (b) Grape Crush?\n" << endl;
+                
+                // input flavor
+                cin >> flavor;
+                
+                // adjust g and cost
+                g = g + 100;
+                cost = cost + 0.50;
+                
+                if (flavor == 'a' || flavor == 'A') { // cherry selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Orange Crush (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else if (flavor == 'b' || flavor == 'B') { // vanilla selected
+                    
+                    // output order
+                    cout << "\nYou ordered a Regular Grape Crush (" << g << " g) for $" << fixed << setprecision(2) << cost << endl;
+                    
+                } else // error trap
+                    cout << "\n That is not a valid option." << endl;
+            
+            } else // error trap
+                cout << "\n That is not a valid option." << endl;
+            
+            break;
+            
+        default: // none of the above selected
+            cout << "\nThat soda isn't on the menu." << endl;
+            
+            break;
+            
+    } // end switch statement
+    
+    cout << "\nHave a nice day!\n" << endl;
+    
+    system("PAUSE");
+    
+    return 0;
+    
+} // end main function
