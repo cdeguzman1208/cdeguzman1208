@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Cromwell De Guzman
 - 👀 I’m interested in computer science & engineering and game design
-- 🌱 I’m currently learning HTML, CSS, JavaScript, and C++
+- 🌱 I’m currently learning HTML, CSS, JavaScript, C++, Java, and C#
 - 📫 How to reach me: cdeguzman1208@gmail.com
 
 <!---
