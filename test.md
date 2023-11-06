@@ -1,10 +1,7 @@
-cromwell de guzman
-
-tyler coleman
-
-game technologies
-
-6 november 2023
+- cromwell de guzman
+- tyler coleman
+- game technologies
+- 6 november 2023
 
 ## module 1: gameplay project
 
