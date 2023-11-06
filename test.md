@@ -1,20 +1,15 @@
-cromwell de guzman
-tyler coleman
-game technologies
-6 november 2023
+# module 1: gameplay project
 
-## module 1: gameplay project
+### physics interactions**
 
-**physics interactions**
+### multiple menus
 
-**multiple menus**
+### in-game hud/gui
 
-**in-game hud/gui**
+### generative content
 
-**generative content**
+### ai
 
-**ai**
+### coding paradigms
 
-**coding paradigms**
-
-**game feel**
+### game feel
